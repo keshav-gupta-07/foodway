@@ -1,1 +1,1 @@
-Online Food Ordering Platform
+FoodWay is an online food ordering platform based on the MERN stack technology.
