@@ -18,7 +18,6 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <Router>
       <QueryClientProvider client={queryCLient}>
-        <AppRoutes />
         <Auth0ProviderWithNavigate>
           <AppRoutes />
         </Auth0ProviderWithNavigate>
