@@ -16,7 +16,7 @@ const Auth0ProviderWithNavigate = ({ children }: Props) => {
     throw new Error("Unable to intialize Auth0");
   }
 
-  const onRedirectCallback = (appState?: AppState, user?: User) => {
+  const onRedirectCallback = (_appState?: AppState, user?: User) => {
     if (user?.sub && user?.email) {
       createUser({ auth0Id: user.sub, email: user.email });
     }
